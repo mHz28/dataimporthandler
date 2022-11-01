@@ -1,6 +1,6 @@
 [  
     {
-      "name": "data-import-handler",
+      "name": "data-import-handler-ekw",
       "description": "A utility to import documents from a database system using Solr",
       "versions": [
         {
