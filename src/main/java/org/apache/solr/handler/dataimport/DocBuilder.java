@@ -114,8 +114,8 @@ public class DocBuilder {
       VariableResolver resolver = null;
       String epoch = propWriter.convertDateToString(EPOCH);
       if(dataImporter != null && dataImporter.getCore() != null
-          && dataImporter.getCore().getResourceLoader().getCoreProperties() != null){
-        resolver =  new VariableResolver(dataImporter.getCore().getResourceLoader().getCoreProperties());
+          && dataImporter.getCore().getResourceLoader().getSolrConfig() != null){
+        resolver =  new VariableResolver(dataImporter.getCore().getResourceLoader().getSolrConfig().getSubstituteProperties());
       } else {
         resolver = new VariableResolver();
       }

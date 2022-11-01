@@ -126,7 +126,7 @@ public class SimplePropertiesWriter extends DIHProperties {
     } else {
       SolrCore core = dataImporter.getCore();
       if (core == null) {
-        configDir = SolrResourceLoader.locateSolrHome().toString();
+        configDir = core.getResourceLoader().getSolrConfig().get("SOLR_HOME").toString();//.locateSolrHome().toString();
       } else {
         configDir = core.getResourceLoader().getConfigDir();
       }

@@ -35,6 +35,7 @@ import java.io.Reader;
 import java.lang.invoke.MethodHandles;
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.nio.charset.StandardCharsets;
 import java.sql.*;
 import java.util.*;
 import java.util.concurrent.Callable;
@@ -127,14 +128,15 @@ public class JdbcDataSource extends
           props.putAll(initProps);
           String password = null;
           try {
-            password = CryptoKeys.decodeAES(initProps.getProperty("password"), new String(chars, 0, len)).trim();
+            //EKW
+            password = new String(CryptoKeys.decryptRSA(initProps.getProperty("password").getBytes(StandardCharsets.UTF_8), null), StandardCharsets.UTF_8);;
           } catch (SolrException se) {
             throw new DataImportHandlerException(SEVERE, "Error decoding password", se.getCause());
           }
           props.put("password", password);
           initProps = props;
         }
-      } catch (IOException e) {
+      } catch (Exception e) {
         throw new DataImportHandlerException(SEVERE, "Could not load encryptKeyFile  " + encryptionKey);
       }
     }

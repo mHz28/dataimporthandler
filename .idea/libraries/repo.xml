@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="repo">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/mariadb-java-client-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/repo/data-import-handler-8.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/repo/data-import-handler-8.10.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

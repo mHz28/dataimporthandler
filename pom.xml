@@ -4,13 +4,13 @@
     <groupId>org.apache.solr</groupId>
     <artifactId>data-import-handler</artifactId>
     <packaging>jar</packaging>
-    <version>8.10.0</version>
+    <version>9.0.0</version>
     <name>data-import-handler</name>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <solr-version>8.10.0</solr-version>
+        <maven.compiler.source>1.10</maven.compiler.source>
+        <maven.compiler.target>1.10</maven.compiler.target>
+        <solr-version>9.0.0</solr-version>
     </properties>
 
     <dependencies>
@@ -20,7 +20,16 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-core</artifactId>
+            <version>9.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-analysis-common</artifactId>
+            <version>9.0.0</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.solr</groupId>
             <artifactId>solr-core</artifactId>

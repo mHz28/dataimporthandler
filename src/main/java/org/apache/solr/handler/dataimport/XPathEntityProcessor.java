@@ -19,7 +19,7 @@ package org.apache.solr.handler.dataimport;
 import static org.apache.solr.handler.dataimport.DataImportHandlerException.SEVERE;
 import static org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow;
 import org.apache.solr.core.SolrCore;
-import org.apache.lucene.analysis.util.ResourceLoader;
+import org.apache.lucene.util.ResourceLoader;
 import org.apache.solr.util.SystemIdResolver;
 import org.apache.solr.common.util.XMLErrorLogger;
 import org.slf4j.Logger;
@@ -56,9 +56,8 @@ import java.util.concurrent.atomic.AtomicReference;
 public class XPathEntityProcessor extends EntityProcessorBase {
   private static final Logger log = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
   private static final XMLErrorLogger xmllog = new XMLErrorLogger(log);
-
   private static final Map<String, Object> END_MARKER = new HashMap<>();
-  
+
   protected List<String> placeHolderVariables;
 
   protected List<String> commonFields;
@@ -92,6 +91,7 @@ public class XPathEntityProcessor extends EntityProcessorBase {
   @SuppressWarnings("unchecked")
   public void init(Context context) {
     super.init(context);
+
     if (reinitXPathReader)
       initXpathReader(context.getVariableResolver());
     pk = context.getEntityAttribute("pk");
