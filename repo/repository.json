@@ -4,7 +4,7 @@
       "description": "A utility to import documents from a database system using Solr",
       "versions": [
         {
-          "version": "9.11.0",
+          "version": "9.0.0",
           "date": "2022-11-01",
           "artifacts": [
             {
