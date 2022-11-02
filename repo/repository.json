@@ -1,4 +1,5 @@
-[  
+[
+
     {
       "name": "data-import-handler",
       "description": "A utility to import documents from a database system using Solr",
