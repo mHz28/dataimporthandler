@@ -1,6 +1,6 @@
 [  
     {
-      "name": "data-import-handler-ekw",
+      "name": "data-import-handler",
       "description": "A utility to import documents from a database system using Solr",
       "versions": [
         {
@@ -8,7 +8,7 @@
           "date": "2022-11-01",
           "artifacts": [
             {
-              "url": "data-import-handler-ekw-9.0.0.jar",
+              "url": "data-import-handler-9.0.0.jar",
               "sig": "ggich+cAREadydwCVHnf/HalMBVaYz9EIyqrBl1KUfcBQidsr5C9nbi0xVCH/foOTyPRzK66l7ImWQyayhz0NQ=="
             },
             {
@@ -42,13 +42,6 @@
             "parameter-defaults": {
               "RH-HANDLER-PATH": "/dataimport"
             }
-          }
-        }
-
-              ],
-              "parameter-defaults": {
-                "RH-HANDLER-PATH": "/dataimport"
-              }
           }
         }
       ]
