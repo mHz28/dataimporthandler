@@ -43,6 +43,14 @@
               "RH-HANDLER-PATH": "/dataimport"
             }
           }
+        }
+
+              ],
+              "parameter-defaults": {
+                "RH-HANDLER-PATH": "/dataimport"
+              }
+          }
+        }
       ]
     }
   ]
