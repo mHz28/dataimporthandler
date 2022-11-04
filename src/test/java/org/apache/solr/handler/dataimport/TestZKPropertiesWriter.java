@@ -18,7 +18,7 @@ package org.apache.solr.handler.dataimport;
 
 import java.lang.invoke.MethodHandles;
 
-import java.nio.file.Path;
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -26,7 +26,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import org.apache.solr.cloud.ZkTestServer;
 import org.apache.solr.common.params.ModifiableSolrParams;
 import org.apache.solr.common.util.SuppressForbidden;
@@ -62,8 +63,11 @@ public class TestZKPropertiesWriter extends AbstractDataImportHandlerTestCase {
     System.setProperty("zkHost", zkServer.getZkAddress());
     System.setProperty("jetty.port", "0000");
 
-    zkServer.buildZooKeeper(getFile("dih/solr"),
-        "dataimport-solrconfig.xml", "dataimport-schema.xml");
+    zkServer.buildZooKeeper(Paths.get("dih/solr"),
+            "dataimport-solrconfig.xml", "dataimport-schema.xml");
+
+//    zkServer.buildZooKeeper(getFile("dih/solr"),
+//        "dataimport-solrconfig.xml", "dataimport-schema.xml");
 
     //initCore("solrconfig.xml", "schema.xml", getFile("dih/solr").getAbsolutePath());
     cc = createDefaultCoreContainer(getFile("dih/solr").toPath());
