@@ -9,7 +9,8 @@
           "date": "2022-11-01",
           "artifacts": [
             {
-              "url": "data-import-handler-9.0.0.jar"
+              "url": "data-import-handler-9.0.0.jar",
+              "sig": "qDSZoe1gWKCuU9+hZ/wdF5IrNf3cXsZdm3Mywsdw5rHJughmpIewB++bYAPkjGSB\nOgzTZHkD+4pnVI1YoGqFwg=="
             },
             {
               "url": "mariadb-java-client-2.6.0.jar",
