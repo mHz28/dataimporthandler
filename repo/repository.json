@@ -5,11 +5,11 @@
       "description": "A utility to import documents from a database system using Solr",
       "versions": [
         {
-          "version": "9.0.0",
+          "version": "9.2.1",
           "date": "2022-11-01",
           "artifacts": [
             {
-              "url": "data-import-handler-9.0.0.jar",
+              "url": "data-import-handler-9.2.1.jar",
               "sig": "wMJbYzDGXnd9bTfZv8kiHTd5n7A3n19+Oruve0y1NAOkjE390H6SNfcKkBRry5JO0IQ8bT7yUn2+5f5DRCRJJg=="
             },
             {
