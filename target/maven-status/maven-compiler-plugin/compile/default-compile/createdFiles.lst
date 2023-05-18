@@ -42,6 +42,7 @@ org/apache/solr/handler/dataimport/CachePropertyUtil.class
 org/apache/solr/handler/dataimport/MockDataSource.class
 org/apache/solr/handler/dataimport/FieldStreamDataSource.class
 org/apache/solr/handler/dataimport/DocBuilder$1.class
+org/apache/solr/handler/dataimport/config/package-info.class
 org/apache/solr/handler/dataimport/config/Field.class
 org/apache/solr/handler/dataimport/XPathRecordReader$Handler.class
 org/apache/solr/handler/dataimport/ClobTransformer.class
@@ -94,6 +95,7 @@ org/apache/solr/handler/dataimport/JdbcDataSource.class
 org/apache/solr/handler/dataimport/DataImporter$1.class
 org/apache/solr/handler/dataimport/DataImporter$Status.class
 org/apache/solr/handler/dataimport/DIHCacheSupport.class
+org/apache/solr/handler/dataimport/package-info.class
 org/apache/solr/handler/dataimport/config/PropertyWriter.class
 org/apache/solr/handler/dataimport/DIHWriter.class
 org/apache/solr/handler/dataimport/Evaluator.class

@@ -18,7 +18,7 @@
             }
           ],
           "manifest": {
-            "version-constraint": "9.0.0",
+            "version-constraint": "9.2.1",
             "plugins": [
               {
                 "name": "request-handler",
